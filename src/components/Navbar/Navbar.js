@@ -14,10 +14,10 @@ const Navbar = () => {
       <img src="/faviconcolor.png" alt="" />
       {/* <h3>Luis Rodrigues</h3> */}
       <nav ref={navRef}>
-        <a href="#welcome">Welcome</a>
-        <a href="#about">About</a>
-        <a href="#projects">Projects</a>
-        <a href="#contact">Contact</a>
+        <a href="#welcome" onClick={showNavbar}>Welcome</a>
+        <a href="#about" onClick={showNavbar}>About</a>
+        <a href="#projects" onClick={showNavbar}>Projects</a>
+        <a href="#contact" onClick={showNavbar}>Contact</a>
         <button className="nav-btn nav-close-btn" onClick={showNavbar}>
           <FaTimes />
         </button>
