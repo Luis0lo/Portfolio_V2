@@ -1,0 +1,60 @@
+.content {
+  width: 65%;
+  margin: auto;
+  padding: 6rem 0 2rem 0;
+}
+.content h1 {
+  font-size: 4rem;
+  padding-bottom: 2rem;
+  text-decoration: underline;
+  text-decoration-color: var(--secondary-color);
+}
+.innerContainer {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+.callToAction {
+  flex-grow: 1;
+  text-align: center;
+  margin: auto;
+  font-size: 1.2rem;
+}
+.contactForm {
+  flex-basis: 20rem;
+  flex-grow: 1;
+  padding: 1rem;
+  background-color: aliceblue;
+}
+.contactIcons {
+  padding: 2rem 0;
+}
+.icons {
+  font-size: 3rem;
+  margin: 0 0.5rem;
+  cursor: pointer;
+  transition: all 0.5s ease;
+}
+a {
+  color: #000;
+}
+.icons:hover {
+  color: var(--secondary-color);
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+@media only screen and (max-width: 500px) {
+  .content {
+    width: 90%;
+    padding-top: 4.2rem;
+  }
+
+  .content h1 {
+    font-size: 2.8rem;
+    font-weight: lighter;
+  }
+}

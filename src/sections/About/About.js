@@ -33,7 +33,7 @@ const About = () => {
               <li>REACT</li>
               <li>Node.js</li>
               <li>Express.js</li>
-              <li>Bootsatrap</li>
+              <li>Bootstrap</li>
             </ul>
             <ul>
               <li>Jest</li>
