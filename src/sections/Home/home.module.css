@@ -1,5 +1,91 @@
-.container{
-    background-color: #000;
-    height: 100vh;
-    color: white;
+.container {
+  background-color: #000;
+  height: 100vh;
+  color: white;
+  display: flex;
+  /* align-items: center; */
+}
+.content {
+  display: flex;
+  width: 75%;
+  margin: auto;
+  height: 60vh;
+  padding-top: 4rem;
+}
+
+.description {
+  flex: 2;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  padding-right: 1rem;
+}
+.devImage {
+  flex: 1;
+}
+.title h1 {
+  font-size: 4rem;
+  padding-bottom: 1rem;
+  text-decoration: underline;
+  text-decoration-color: var(--secondary-color);
+}
+.title h2 {
+  font-size: 2.5rem;
+  text-align: right;
+  text-decoration: underline;
+  text-decoration-color: var(--secondary-color);
+}
+.intro {
+  font-size: 1.2rem;
+}
+.devImage img {
+  border-radius: 1.5rem;
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+@media only screen and (max-width: 750px) {
+  .devImage {
+    display: none;
+  }
+  .content {
+    flex-wrap: wrap;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .container {
+    display: block;
+    /* padding-top: 25rem; */
+    min-height: 100vh;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+      url('https://github.com/Luis0lo/webDeveloper/blob/main/style/img/table6.jpg?raw=true');
+    /* background-repeat: no-repeat; */
+    background-size: cover;
+    background-attachment: fixed;
+  }
+
+  .content {
+    width: 94%;
+    padding-top: 0;
+    height: 83vh;
+    text-align: center;
+  }
+
+  .intro p:nth-child(2) {
+    padding: 2rem 0;
+  }
+
+  .title h1 {
+    padding-top: 7rem;
+    font-size: 2.8rem;
+    font-weight: lighter;
+  }
+  .title h2 {
+    font-weight: lighter;
+    font-size: 1.5rem;
+    text-align: center;
+    text-decoration: none;
+  }
 }
