@@ -64,7 +64,7 @@ const Contact = () => {
                 placeholder="Message"
                 required
               ></textarea>
-              <button type="submit">Submit</button>
+              <button type="submit">SUBMIT</button>
             </form>
           </div>
         </div>
