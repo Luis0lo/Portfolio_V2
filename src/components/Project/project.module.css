@@ -1,0 +1,47 @@
+.container {
+  padding: 1rem 0;
+  margin: 1rem 0;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+.innerContainer {
+  /* flex-basis: 25rem; */
+  width: 420px;
+  display: flex;
+  flex-direction: column;
+  border-radius: 0.5rem;
+  background-color: white;
+  text-align: center;
+}
+.innerContainer h3 {
+  margin: 1rem;
+}
+.innerContainer p {
+  text-align: left;
+  margin: 0 1rem;
+}
+.innerContainer img {
+  height: 330px;
+  border-radius: 0.5rem 0.5rem 0 0;
+  object-fit: cover;
+}
+.iconsContainer {
+  margin: 1rem 0;
+}
+.icons {
+  font-size: 2rem;
+  margin: 0 0.2rem;
+  padding: 0.1rem;
+  cursor: pointer;
+  transition: all 0.5s ease;
+  border: 2px solid transparent;
+}
+a {
+  color: #000;
+}
+.icons:hover {
+  border: 2px solid var(--secondary-color);
+  border-radius: 5px;
+}
