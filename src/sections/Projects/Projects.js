@@ -1,4 +1,4 @@
-import { useEffect, useState } from 'react';
+import { useState } from 'react';
 import Project from '../../components/Project/Project';
 import styles from './projects.module.css';
 import projects from '../../libs/portfolioData';
