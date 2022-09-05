@@ -13,7 +13,7 @@ const Project = ({ projects }) => {
               <h3>{project.title}</h3>
               <p>{project.introduction}</p>
               <div className={styles.iconsContainer}>
-                {project.onlyMobile && (
+                {project.mobile && (
                   <a
                     href={project.websiteUrl}
                     target="_blank"
@@ -22,8 +22,7 @@ const Project = ({ projects }) => {
                     <GoDeviceMobile className={styles.icons}></GoDeviceMobile>
                   </a>
                 )}
-
-                {!project.onlyMobile && (
+                {project.desktop && (
                   <a
                     href={project.websiteUrl}
                     target="_blank"

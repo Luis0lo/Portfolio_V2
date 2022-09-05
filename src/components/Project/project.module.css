@@ -2,9 +2,9 @@
   padding: 1rem 0;
   margin: 1rem 0;
   display: flex;
-  justify-content: space-around;
+  justify-content: space-evenly;
   flex-wrap: wrap;
-  gap: 1rem;
+  gap: 5rem;
 }
 .innerContainer {
   /* flex-basis: 25rem; */
@@ -51,4 +51,15 @@ a {
 .icons:hover {
   border: 2px solid var(--secondary-color);
   border-radius: 5px;
+}
+@media only screen and (max-width: 500px) {
+  .container {
+    gap: 2rem;
+  }
+  .innerContainer {
+    width: 370px;
+  }
+  .innerContainer img {
+    height: 280px;
+  }
 }
