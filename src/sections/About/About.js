@@ -4,7 +4,7 @@ const About = () => {
   return (
     <section id="about" className={styles.container}>
       <div className={styles.content}>
-        <h1>About Me</h1>
+        <h2>About Me</h2>
         <div className={styles.textContent}>
           <p>
             Hi! My interest in web development started back in 2019 when I
@@ -21,7 +21,7 @@ const About = () => {
           </p>
         </div>
         <div className={styles.skillsContainer}>
-          <h2>Skills</h2>
+          <h3>Skills</h3>
           <div className={styles.skillsTable}>
             <ul>
               <li>HTML</li>
