@@ -52,6 +52,9 @@ a {
   border: 2px solid var(--secondary-color);
   border-radius: 5px;
 }
+.mobileIcons {
+  display: none;
+}
 @media only screen and (max-width: 500px) {
   .container {
     gap: 2rem;
@@ -61,5 +64,11 @@ a {
   }
   .innerContainer img {
     height: 280px;
+  }
+  .desktopIcons {
+    display: none;
+  }
+  .mobileIcons {
+    display: inline-block;
   }
 }

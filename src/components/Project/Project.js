@@ -1,6 +1,6 @@
 import styles from './project.module.css';
 
-import { GoDeviceMobile, GoDeviceDesktop, GoMarkGithub } from 'react-icons/go';
+import { GoDeviceMobile, GoDeviceDesktop, GoMarkGithub, GoEye } from 'react-icons/go';
 
 const Project = ({ projects }) => {
   return (
@@ -19,7 +19,7 @@ const Project = ({ projects }) => {
                     target="_blank"
                     rel="noopener noreferrer"
                   >
-                    <GoDeviceMobile className={styles.icons}></GoDeviceMobile>
+                    <GoDeviceMobile className={`${styles.icons} ${styles.desktopIcons}`}></GoDeviceMobile>
                   </a>
                 )}
                 {project.desktop && (
@@ -28,10 +28,17 @@ const Project = ({ projects }) => {
                     target="_blank"
                     rel="noopener noreferrer"
                   >
-                    <GoDeviceDesktop className={styles.icons}></GoDeviceDesktop>
+                    <GoDeviceDesktop className={`${styles.icons} ${styles.desktopIcons}`}></GoDeviceDesktop>
                   </a>
                 )}
 
+                <a
+                  href={project.websiteUrl}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <GoEye className={`${styles.icons} ${styles.mobileIcons}`}></GoEye>
+                </a>
                 <a
                   href={project.githubUrl}
                   target="_blank"
