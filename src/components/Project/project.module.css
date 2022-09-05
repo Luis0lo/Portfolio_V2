@@ -23,9 +23,16 @@
   margin: 0 1rem;
 }
 .innerContainer img {
-  height: 330px;
+  /* width: 100%; */
+  height: 320px;
   border-radius: 0.5rem 0.5rem 0 0;
   object-fit: cover;
+}
+.infoContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  flex: 1;
 }
 .iconsContainer {
   margin: 1rem 0;

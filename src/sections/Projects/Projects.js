@@ -1,9 +1,11 @@
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 import Project from '../../components/Project/Project';
 import styles from './projects.module.css';
+import projects from '../../libs/portfolioData';
 
 const Projects = () => {
   const [selectedSkill, setSkill] = useState('All');
+  const [data, setData] = useState(projects);
 
   const skills = [
     'All',
@@ -19,7 +21,14 @@ const Projects = () => {
 
   const handleButtonClickFilter = (skill) => {
     setSkill(skill);
+    if (skill === 'All') {
+      setData(projects);
+    } else {
+      console.log(skill)
+      setData(projects.filter((project) => project.tech.includes(skill)));
+    }
   };
+
 
   return (
     <section id="projects" className={styles.container}>
@@ -38,7 +47,7 @@ const Projects = () => {
             ))}
           </div>
           <div className={styles.projectCard}>
-            <Project skill={selectedSkill} />
+            <Project projects={data} />
           </div>
         </div>
       </div>
