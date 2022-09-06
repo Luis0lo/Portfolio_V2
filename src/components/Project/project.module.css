@@ -14,6 +14,7 @@
   border-radius: 0.5rem;
   background-color: white;
   text-align: center;
+  box-shadow: 0 0 25px rgba(0, 0, 0, 0.2);
 }
 .innerContainer h3 {
   margin: 1rem;

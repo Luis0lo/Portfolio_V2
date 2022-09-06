@@ -10,6 +10,7 @@ const Project = ({ projects }) => {
           <div key={project.title} className={styles.innerContainer}>
             <img src={project.imageUrl} alt={project.imageAlt} />
             <div className={styles.infoContainer}>
+            <hr />
               <h3>{project.title}</h3>
               <p>{project.introduction}</p>
               <div className={styles.iconsContainer}>
