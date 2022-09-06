@@ -1,0 +1,45 @@
+.container {
+  display: inline;
+}
+
+.icons {
+  font-size: 2rem;
+  margin: 0 0.2rem;
+  padding: 0.1rem;
+  cursor: pointer;
+  transition: all 0.5s ease;
+  border: 2px solid transparent;
+}
+
+.icons:hover {
+  border: 2px solid var(--secondary-color);
+  border-radius: 5px;
+}
+.modalHeader {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 0.2rem 0.3rem 0.2rem;
+}
+
+button {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
+.iframeContainer {
+  width: 352px;
+  height: 672px;
+  overflow: hidden;
+  border: 1px solid grey;
+}
+iframe {
+  width: 370px;
+  height: 690px;
+  border: none;
+  overflow: hidden;
+}
+@media only screen and (max-width: 500px) {
+  .desktopIcons {
+    display: none;
+  }
+}

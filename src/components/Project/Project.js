@@ -1,8 +1,10 @@
 import styles from './project.module.css';
 
-import { GoDeviceMobile, GoDeviceDesktop, GoMarkGithub, GoEye } from 'react-icons/go';
+import { GoDeviceDesktop, GoMarkGithub, GoEye } from 'react-icons/go';
+import DisplayModal from '../DisplayModal/DisplayModal';
 
 const Project = ({ projects }) => {
+
   return (
     <div className={styles.container}>
       {projects &&
@@ -15,13 +17,7 @@ const Project = ({ projects }) => {
               <p>{project.introduction}</p>
               <div className={styles.iconsContainer}>
                 {project.mobile && (
-                  <a
-                    href={project.websiteUrl}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                  >
-                    <GoDeviceMobile className={`${styles.icons} ${styles.desktopIcons}`}></GoDeviceMobile>
-                  </a>
+                  <DisplayModal websiteUrl={project.websiteUrl}/>
                 )}
                 {project.desktop && (
                   <a
