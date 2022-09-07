@@ -25,10 +25,11 @@
 .skillsContainer {
   width: 40vw;
   background-color: #fefefe;
-  border: 1px solid var(--secondary-color);
+  border: 1px solid rgba(18, 184, 255, 0.2);
   margin: 3rem auto;
   padding: 1rem;
   border-radius: 10px;
+  box-shadow: 0 0 10px rgba(18, 184, 255, 0.2);
 }
 .skillsTable {
   display: flex;

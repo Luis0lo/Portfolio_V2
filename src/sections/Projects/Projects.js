@@ -9,13 +9,15 @@ const Projects = () => {
 
   const skills = [
     'All',
+    'CSS',
     'React',
     'Personal',
     'Teamwork',
-    'Javascript',
-    'Front end',
-    'Back end',
-    'Express',
+    'Bootstrap',
+    'Chakra UI',
+    'MongoDB',
+    'PostgreSQL',
+    'Auth',
     'Node.js',
   ];
 
@@ -24,11 +26,10 @@ const Projects = () => {
     if (skill === 'All') {
       setData(projects);
     } else {
-      console.log(skill)
+      console.log(skill);
       setData(projects.filter((project) => project.tech.includes(skill)));
     }
   };
-
 
   return (
     <section id="projects" className={styles.container}>
