@@ -1,13 +1,18 @@
-# Luis Rodrigues Portfolio V2
+<h1 align='center'>
+Luis Rodrigues -- Portfolio V2
+</h1>
 
-![image](./public/images/metaImage.jpg)
+<p align='center'>
+<img src="public/images/metaImage.jpg" width="400px" align="center"> 
+</p>
 
+<p align='center'>
 Built with ReactJS v18.0 and deployed using Netlify.
+</p>
 
 ### Live
- ```
- [withluis.com](https://withluis.com/)
- ```
+[withluis.com](https://withluis.com/)
+ 
 
 ### Run locally
 - npm i
