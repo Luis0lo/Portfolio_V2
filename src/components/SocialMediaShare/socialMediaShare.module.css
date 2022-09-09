@@ -1,0 +1,46 @@
+.stickyShare {
+  position: fixed;
+  top: 60vh;
+  right: 6vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 0.5rem;
+}
+.shareIcon {
+  font-size: 2rem;
+  padding-bottom: 0.7rem;
+}
+
+.icons {
+  font-size: 2.5rem;
+  transition: all 0.5s ease-in-out 0s;
+}
+.icons:hover {
+  transform: scale(1.2);
+}
+@media only screen and (max-width: 500px) {
+  .stickyShare {
+    position: absolute;
+    top: 93vh;
+    bottom: 0px;
+    right: 50%;
+    transform: translateX(50%);
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 0.5rem;
+    background-color: rgba(238, 243, 247, 0.712);
+    width: 100vw;
+  }
+  .shareIcon {
+    font-size: 2rem;
+    padding-bottom: 0rem;
+    margin-right: 1rem;
+  }
+  .icons {
+    margin: 0 0.5rem;
+  }
+}
