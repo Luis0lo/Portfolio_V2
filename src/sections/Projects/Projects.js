@@ -19,6 +19,8 @@ const Projects = () => {
     'PostgreSQL',
     'Auth',
     'Node.js',
+    'Redux',
+    'Styled-components'
   ];
 
   const handleButtonClickFilter = (skill) => {

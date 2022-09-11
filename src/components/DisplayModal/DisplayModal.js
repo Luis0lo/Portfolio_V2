@@ -45,7 +45,8 @@ const DisplayModal = ({ websiteUrl }) => {
           </div>
 
           <div className={styles.iframeContainer}>
-            <iframe title="serena" src={websiteUrl}></iframe>
+            <iframe title="serena" src={websiteUrl}
+            ></iframe>
           </div>
           <div></div>
         </div>

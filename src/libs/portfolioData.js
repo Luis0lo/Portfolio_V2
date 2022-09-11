@@ -11,7 +11,7 @@ const projects = [
       'PostgreSQL',
       'Auth',
     ],
-    desktop: false,
+    desktop: true,
     mobile: true,
     githubUrl:
       'https://github.com/SchoolOfCode/final-project-repo-restful-journey/blob/main/README.md',
@@ -114,6 +114,19 @@ const projects = [
     introduction:
       'Full stack app where users can submit, edit and delete their favourite fields and respective locations. They are also allowed to comment on posts. ',
     imageUrl: '/images/fields.jpg',
+    imageAlt: 'Fields',
+  },
+  {
+    id: 7,
+    title: 'CrochetIsland E-comm',
+    tech: ['All', 'MongoDB', 'Express', 'Personal', 'Redux', 'Styled-components' ],
+    desktop: true,
+    mobile: true,
+    githubUrl: 'https://github.com/Luis0lo/eCommerce',
+    websiteUrl: 'https://crochetisland.netlify.app/',
+    introduction:
+      "Full stack eCommerce app project in progress. The app's main goal is to explore Redux and use the payment processing platform Stripe.",
+    imageUrl: '/images/crochetIsland.jpg',
     imageAlt: 'Fields',
   },
 ];
