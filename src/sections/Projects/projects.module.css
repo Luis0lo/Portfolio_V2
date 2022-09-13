@@ -25,6 +25,7 @@
   border: 2px solid var(--secondary-color);
   cursor: pointer;
   transition: all 0.5s ease;
+  position: relative;
 }
 
 .selectSkill button:hover {
@@ -33,6 +34,19 @@
 
 .selectSkill .active {
   background-color: var(--secondary-color);
+}
+.selectSkill .displayAmount {
+  display: inline;
+  position: absolute;
+  background-color: white;
+  width: 22px;
+  border: 2px solid var(--secondary-color);
+  border-radius: 50%;
+  top: -10px;
+  right: -9px;
+}
+.selectSkill .hideAmount {
+  display: none;
 }
 
 @media only screen and (max-width: 500px) {
@@ -45,7 +59,7 @@
     font-weight: lighter;
     text-align: center;
   }
-  .selectSkill{
+  .selectSkill {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;

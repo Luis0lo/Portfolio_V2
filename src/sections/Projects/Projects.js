@@ -20,7 +20,7 @@ const Projects = () => {
     'Auth',
     'Node.js',
     'Redux',
-    'Styled-components'
+    'Styled-components',
   ];
 
   const handleButtonClickFilter = (skill) => {
@@ -45,7 +45,14 @@ const Projects = () => {
                 onClick={() => handleButtonClickFilter(skill)}
                 key={skill}
               >
-                {skill}
+                {skill}{' '}
+                <span
+                  className={
+                    selectedSkill === skill ? styles.displayAmount : styles.hideAmount
+                  }
+                >
+                  {data.length}
+                </span>
               </button>
             ))}
           </div>
