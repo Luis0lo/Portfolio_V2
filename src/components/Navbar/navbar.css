@@ -8,6 +8,7 @@ header {
   color: var(--dark-text-color);
   position: fixed;
   width: 100%;
+  z-index: 1;
 }
 header img {
   height: 80px;
