@@ -24,11 +24,13 @@ const Project = ({ projects }) => {
                     target="_blank"
                     rel="noopener noreferrer"
                   >
-                    <button className={styles.projectsBtn}>
+                    <button
+                      className={`${styles.projectsBtn} ${styles.desktopButton}`}
+                    >
                       <GoDeviceDesktop
                         className={`${styles.icons} ${styles.desktopIcons}`}
                       ></GoDeviceDesktop>
-                      View
+                      view
                     </button>
                   </a>
                 )}
@@ -38,10 +40,16 @@ const Project = ({ projects }) => {
                   target="_blank"
                   rel="noopener noreferrer"
                 >
-                  <GoEye
-                    className={`${styles.icons} ${styles.mobileIcons}`}
-                  ></GoEye>
+                  <button
+                    className={`${styles.projectsBtn} ${styles.viewProjectEye}`}
+                  >
+                    <GoEye
+                      className={`${styles.icons}`}
+                    ></GoEye>
+                    view
+                  </button>
                 </a>
+
                 <a
                   href={project.githubUrl}
                   target="_blank"

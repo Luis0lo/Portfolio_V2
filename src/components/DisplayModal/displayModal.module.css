@@ -27,6 +27,7 @@
   border-radius: 5px;
   margin: 0px 5px;
   padding: 0.1rem 0.3rem;
+  cursor: pointer;
 }
 .iframeContainer {
   width: 352px;
@@ -41,7 +42,7 @@ iframe {
   overflow: hidden;
 }
 @media only screen and (max-width: 500px) {
-  .desktopIcons {
+  .projectsBtn{
     display: none;
   }
 }

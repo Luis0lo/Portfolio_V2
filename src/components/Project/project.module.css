@@ -65,7 +65,10 @@ a {
   border: 2px solid var(--secondary-color);
   border-radius: 5px;
 }
-.mobileIcons {
+/* .mobileIcons {
+  display: none;
+} */
+.viewProjectEye {
   display: none;
 }
 @media only screen and (max-width: 500px) {
@@ -78,10 +81,10 @@ a {
   .innerContainer img {
     height: 280px;
   }
-  .desktopIcons {
+  .desktopButton {
     display: none;
   }
-  .mobileIcons {
-    display: inline-block;
+  .viewProjectEye {
+    display: inline-flex;
   }
 }
