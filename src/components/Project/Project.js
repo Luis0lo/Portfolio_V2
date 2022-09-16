@@ -24,9 +24,12 @@ const Project = ({ projects }) => {
                     target="_blank"
                     rel="noopener noreferrer"
                   >
-                    <GoDeviceDesktop
-                      className={`${styles.icons} ${styles.desktopIcons}`}
-                    ></GoDeviceDesktop>
+                    <button className={styles.projectsBtn}>
+                      <GoDeviceDesktop
+                        className={`${styles.icons} ${styles.desktopIcons}`}
+                      ></GoDeviceDesktop>
+                      View
+                    </button>
                   </a>
                 )}
 
@@ -44,7 +47,10 @@ const Project = ({ projects }) => {
                   target="_blank"
                   rel="noopener noreferrer"
                 >
-                  <GoMarkGithub className={styles.icons}></GoMarkGithub>
+                  <button className={styles.projectsBtn}>
+                    <GoMarkGithub className={styles.icons}></GoMarkGithub>
+                    code
+                  </button>
                 </a>
               </div>
             </div>

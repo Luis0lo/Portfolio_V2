@@ -11,10 +11,11 @@ const DisplayModal = ({ websiteUrl }) => {
   const [modalIsOpen, setModalIsOpen] = useState(false);
   return (
     <div className={styles.container}>
-      <button onClick={() => setModalIsOpen(true)}>
+      <button onClick={() => setModalIsOpen(true)} className={styles.projectsBtn}>
         <GoDeviceMobile
           className={`${styles.icons} ${styles.desktopIcons}`}
         ></GoDeviceMobile>
+        view
       </button>
       <Modal
         className={styles.modalStyles}
@@ -23,6 +24,7 @@ const DisplayModal = ({ websiteUrl }) => {
         style={{
           overlay: {
             // backgroundColor: 'grey'
+            zIndex: '3',
           },
           content: {
             top: '20%',
@@ -45,8 +47,7 @@ const DisplayModal = ({ websiteUrl }) => {
           </div>
 
           <div className={styles.iframeContainer}>
-            <iframe title="serena" src={websiteUrl}
-            ></iframe>
+            <iframe title="serena" src={websiteUrl}></iframe>
           </div>
           <div></div>
         </div>
