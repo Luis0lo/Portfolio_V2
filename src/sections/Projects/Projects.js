@@ -10,9 +10,11 @@ const Projects = () => {
   const skills = [
     'All',
     'CSS',
+    'SCSS',
     'React',
     'Personal',
     'Teamwork',
+    'Freelance',
     'Bootstrap',
     'Chakra UI',
     'MongoDB',

@@ -35,6 +35,19 @@ const projects = [
     imageAlt: 'Weather App',
   },
   {
+    id: 8,
+    title: 'Chauffeur Service',
+    tech: ['All', 'React', 'Personal', 'Freelance', 'CSS', 'SCSS'],
+    desktop: true,
+    mobile: true,
+    githubUrl: 'https://github.com/Luis0lo/traslados_ideal',
+    websiteUrl: 'https://trasladosideal.com',
+    introduction:
+      'This project was built for a South American client with the ambition to attract more clients for its private chauffeur company. In this project, I used scss for the first time.',
+    imageUrl: '/images/chauffeur.jpg',
+    imageAlt: 'Chauffeur landing page',
+  },
+  {
     id: 2,
     title: 'onePlace',
     tech: [
