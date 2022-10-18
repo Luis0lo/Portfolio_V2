@@ -1,7 +1,7 @@
 .stickyShare {
   position: fixed;
   top: 60vh;
-  right: 6vw;
+  right: 4vw;
   display: flex;
   flex-direction: column;
   justify-content: center;

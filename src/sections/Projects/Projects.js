@@ -53,7 +53,7 @@ const Projects = () => {
                     selectedSkill === skill ? styles.displayAmount : styles.hideAmount
                   }
                 >
-                  {data.length}
+                  {data.length -1}
                 </span>
               </button>
             ))}

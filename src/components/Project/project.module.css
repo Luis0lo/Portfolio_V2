@@ -4,11 +4,11 @@
   display: flex;
   justify-content: space-evenly;
   flex-wrap: wrap;
-  gap: 5rem;
+  gap: 2rem;
 }
 .innerContainer {
   /* flex-basis: 25rem; */
-  width: 420px;
+  width: 400px;
   display: flex;
   flex-direction: column;
   border-radius: 0.5rem;
@@ -87,4 +87,15 @@ a {
   .viewProjectEye {
     display: inline-flex;
   }
+}
+.comingSoonCard {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  font-size: 4vw;
+  font-weight: 800;
+  color: rgb(211, 207, 207);
+  padding: 4rem 0;
 }
