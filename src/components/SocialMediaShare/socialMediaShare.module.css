@@ -11,9 +11,11 @@
 .shareIcon {
   font-size: 2rem;
   padding-bottom: 0.7rem;
+  color: rgb(24, 24, 24);
 }
 
 .icons {
+  color: rgb(24, 24, 24);
   font-size: 2.5rem;
   transition: all 0.5s ease-in-out 0s;
 }
