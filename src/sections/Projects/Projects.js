@@ -3,6 +3,7 @@ import Project from '../../components/Project/Project';
 import styles from './projects.module.css';
 import projects from '../../libs/portfolioData';
 
+
 const Projects = () => {
   const [selectedSkill, setSkill] = useState('All');
   const [data, setData] = useState(projects);
@@ -40,7 +41,8 @@ const Projects = () => {
       <div className={styles.content}>
         <h2>My Projects</h2>
         <div className={styles.innerContainer}>
-          <div className={styles.selectSkill}>
+          <div initial={{ opacity: 0 }}
+        animate={{ opacity: 1 }} className={styles.selectSkill}>
             {skills.map((skill) => (
               <button
                 className={selectedSkill === skill ? styles.active : undefined}
